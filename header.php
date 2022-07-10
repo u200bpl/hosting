@@ -11,7 +11,6 @@
                         <a class="<?php if(isset($minecraft)){echo "nav-active";} ?>" href="minecraft.php">Minecraft</a>
                         <a class="<?php if(isset($fivem)){echo "nav-active";} ?>" href="fivem.php">Fivem</a>
                         <a class="<?php if(isset($discord)){echo "nav-active";} ?>" href="discord.php">Discord Bot</a>
-                        <a class="<?php if(isset($cotact)){echo "nav-active";} ?>" href="">Contact Us</a>
                     </div>
 
                     <div class="buttons">

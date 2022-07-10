@@ -1,3 +1,21 @@
+<?php
+if (basename($_SERVER['PHP_SELF']) == "index.php") {
+    $index = true;
+}
+
+if (basename($_SERVER['PHP_SELF']) == "minecraft.php") {
+    $minecraft = true;
+}
+
+if (basename($_SERVER['PHP_SELF']) == "fivem.php") {
+    $fivem = true;
+}
+
+if (basename($_SERVER['PHP_SELF']) == "discord.php") {
+    $discord = true;
+}
+?>
+
 <!DOCTYPE html>
     <html lang="en">
         <head>

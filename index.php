@@ -2,8 +2,6 @@
             require_once 'head.php';
             require_once 'header.php';
             require_once 'backend/conn.php';
-
-            basename($_SERVER['PHP_SELF']) == "index.php"
         ?>
 
         <main>
@@ -69,9 +67,10 @@
                     </div>
                 </div>
             </section>
+            
             <section class="space">
                 <div class="wrapper">
-                    <h3 class="space2">Choose a plan</h3>
+                    <h3 class="space">Choose a plan</h3>
                     <div class="services-flex">
                         <div class="banner">
                             <img src="img/minecraft2.jpg" alt="">
