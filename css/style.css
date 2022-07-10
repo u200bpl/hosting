@@ -652,6 +652,19 @@ h3 {
     border-top: 1px white solid;
 }
 
+/*              */
+/* TEST SECTION */
+/*              */
+
+.services-plan {
+    background: var(--second);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 25px;
+}
+
 /*                */
 /*                */
 /* MOBILE SECTION */

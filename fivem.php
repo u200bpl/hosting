@@ -1,44 +1,15 @@
-<!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Galaxynode | FiveM Servers</title>
+        <?php
+            require_once 'head.php';
+            require_once 'header.php';
+            require_once 'backend/conn.php';
 
-            <meta name="description" content="Order now your own cheap and fast FiveM Server at galaxynode!">
-            <link href="img/logo.png" rel="shortcut icon">
-            <meta name="keywords" content="minecraft, minecraft hosting, minecraft server, minecraft server hosting, mc, mc hosting, mc server, mc server hosting, fivem, fivem hosting, fivem server, fivem server hosting, fivem txadmin, fivem server txadmin, fivem server hosting txadmin, fivem hosting txadmin, discord, discord hosting, discord server, discord server hosting, discord bot, discord bot server, discord bot hosting">
-            <meta name="author" content="Dennis Overman">
+            $query = "SELECT * FROM products";
+            $statement = $conn->prepare($query);
+            $statement->execute();
+            $productlist = $statement->fetchAll(PDO::FETCH_ASSOC);
+        ?>
 
-            <link rel="stylesheet" href="css/style.css">
-            <script src="https://kit.fontawesome.com/268c8277db.js" crossorigin="anonymous"></script>
-        </head>
-    <body>
-        <header>
-            <nav>
-                <div class="wrapper">
-                    <div class="navbar">
-                        <div class="navbarleft">
-                        <a href="index.php"><h1><span>GALAXYNODE</span></h1></a>
-                        </div>
-
-                        <div class="navbarright">
-                            <a href="index.php">Home</a>
-                            <a href="minecraft.php">Minecraft</a>
-                            <a href="fivem.php" class="nav-active">Fivem</a>
-                            <a href="discord.php">Discord Bot</a>
-                            <a href="">Contact Us</a>
-                        </div>
-
-                        <div class="buttons">
-                            <button class="btn2" onclick="window.location.href='https://panel.galaxynode.net/';">GAME PANEL</button>
-                            <button class="btn">LOGIN <i class="fa-solid fa-angle-down"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        
+        <main>
             <section class="stn-fivem">
                 <div class="wrapper">
                     <div class="flex-box">
@@ -53,95 +24,28 @@
                     </div> 
                 </div>
             </section>
-        </header>
 
-        <main>
-        <section class="space">
+            <section class="space">
                 <div class="wrapper">
                     <div class="services-flex">
-                        <div class="mc-banner">
-                            <img src="img/fivem/snale1.png" alt="">
+                        <?php foreach($productlist as $product) { ?>
+                            <?php if ($product['category'] == "fivem") { ?>
+                                <div class="mc-banner">
+                                    <img src="<?php echo $base_url; ?><?php echo $product['img']; ?>" alt="">
 
-                            <div class="mc-banner-box">
-                                <h5>Basic | <span>€6,00</span></h5>
+                                    <div class="mc-banner-box">
+                                        <h5><?php echo $product['name']; ?> | <span>€<?php echo $product['price']; ?></span></h5>
 
-                                <p><span>Ram: </span>2048 MB</p>
-                                <p><span>Cores: </span>200%</p>
-                                <p><span>Storage: </span>25 GB</p>
-                                <p><span>MySQL: </span>Free MySQL</p>
-                            </div>
-                            <a href="" class="btn5">Purchase</a>
-                        </div>
+                                        <p><span>Ram: </span><?php echo $product['ram']; ?> MB</p>
+                                        <p><span>Cores: </span><?php echo $product['cores']; ?>%</p>
+                                        <p><span>Storage: </span><?php echo $product['storage']; ?> MB</p>
+                                        <p><span>MySQL: </span>Free MySQL</p>
 
-                        <div class="mc-banner">
-                            <img src="img/fivem/snale2.png" alt="">
-
-                            <div class="mc-banner-box">
-                                <h5>Premium | <span>€12,00</span></h5>
-                                
-                                <p><span>Ram: </span>4096 MB</p>
-                                <p><span>Cores: </span>200%</p>
-                                <p><span>Storage: </span>50 GB</p>
-                                <p><span>MySQL: </span>Free MySQL</p>
-                            </div>
-                            <a href="" class="btn5">Purchase</a>
-                        </div>
-
-                        <div class="mc-banner">
-                            <img src="img/fivem/snale3.png" alt="">
-
-                            <div class="mc-banner-box">
-                                <h5>Ultimate | <span>€18,00</span></h5>
-
-                                <p><span>Ram: </span>6144 MB</p>
-                                <p><span>Cores: </span>300%</p>
-                                <p><span>Storage: </span>75 GB</p>
-                                <p><span>MySQL: </span>Free MySQL</p>
-                            </div>
-                            <a href="" class="btn5">Purchase</a>
-                        </div>
-
-                        <div class="mc-banner">
-                            <img src="img/fivem/snale4.png" alt="">
-
-                            <div class="mc-banner-box">
-                                <h5>Supreme | <span>€24,00</span></h5>
-
-                                <p><span>Ram: </span>8192 MB</p>
-                                <p><span>Cores: </span>300%</p>
-                                <p><span>Storage: </span>100 GB</p>
-                                <p><span>MySQL: </span>Free MySQL</p>
-                            </div>
-                            <a href="" class="btn5">Purchase</a>
-                        </div>
-
-                        <div class="mc-banner">
-                            <img src="img/fivem/snale5.png" alt="">
-
-                            <div class="mc-banner-box">
-                                <h5>Godly | <span>€36,00</span></h5>
-
-                                <p><span>Ram: </span>12288 MB</p>
-                                <p><span>Cores: </span>400%</p>
-                                <p><span>Storage: </span>150 GB</p>
-                                <p><span>MySQL: </span>Free MySQL</p>
-                            </div>
-                            <a href="" class="btn5">Purchase</a>
-                        </div>
-
-                        <div class="mc-banner">
-                            <img src="img/fivem/snale6.png" alt="">
-
-                            <div class="mc-banner-box">
-                                <h5>Crazy | <span>€48,00</span></h5>
-
-                                <p><span>Ram: </span>16384 MB</p>
-                                <p><span>Cores: </span>600%</p>
-                                <p><span>Storage: </span>175 GB</p>
-                                <p><span>MySQL: </span>Free MySQL</p>
-                            </div>
-                            <a href="" class="btn5">Purchase</a>
-                        </div>
+                                        <a href="<?php echo $product['purchare_link']; ?>" class="btn5">Purchase</a>
+                                    </div>
+                                </div>
+                            <?php } ?>
+                        <?php } ?>
                     </div>
                 </div>
             </section>
@@ -214,4 +118,4 @@
             </section>
         </main>
 
-        <?php include('layout/footer.php') ?>
+        <?php include('footer.php') ?>

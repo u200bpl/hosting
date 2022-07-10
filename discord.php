@@ -1,44 +1,15 @@
-<!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Galaxynode | Discord Bot Hosting</title>
+        <?php
+            require_once 'head.php';
+            require_once 'header.php';
+            require_once 'backend/conn.php';
 
-            <meta name="description" content="Order now your own cheap and fast Discord Bot Hosting at galaxynode!">
-            <link href="img/logo.png" rel="shortcut icon">
-            <meta name="keywords" content="minecraft, minecraft hosting, minecraft server, minecraft server hosting, mc, mc hosting, mc server, mc server hosting, fivem, fivem hosting, fivem server, fivem server hosting, fivem txadmin, fivem server txadmin, fivem server hosting txadmin, fivem hosting txadmin, discord, discord hosting, discord server, discord server hosting, discord bot, discord bot server, discord bot hosting">
-            <meta name="author" content="Dennis Overman">
+            $query = "SELECT * FROM products";
+            $statement = $conn->prepare($query);
+            $statement->execute();
+            $productlist = $statement->fetchAll(PDO::FETCH_ASSOC);
+        ?>
 
-            <link rel="stylesheet" href="css/style.css">
-            <script src="https://kit.fontawesome.com/268c8277db.js" crossorigin="anonymous"></script>
-        </head>
-    <body>
-        <header>
-            <nav>
-                <div class="wrapper">
-                    <div class="navbar">
-                        <div class="navbarleft">
-                        <a href="index.php"><h1><span>GALAXYNODE</span></h1></a>
-                        </div>
-
-                        <div class="navbarright">
-                            <a href="index.php">Home</a>
-                            <a href="minecraft.php">Minecraft</a>
-                            <a href="fivem.php">Fivem</a>
-                            <a href="discord.php" class="nav-active">Discord Bot</a>
-                            <a href="">Contact Us</a>
-                        </div>
-
-                        <div class="buttons">
-                            <button class="btn2" onclick="window.location.href='https://panel.galaxynode.net/';">GAME PANEL</button>
-                            <button class="btn">LOGIN <i class="fa-solid fa-angle-down"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        
+        <main>
             <section class="stn-discord">
                 <div class="wrapper">
                     <div class="flex-box">
@@ -53,50 +24,27 @@
                     </div> 
                 </div>
             </section>
-        </header>
 
-        <main>
-        <section class="space">
+            <section class="space">
                 <div class="wrapper">
                     <div class="services-flex">
-                        <div class="qb-banner">
-                            <img src="img/discord/discord.png" alt="">
+                    <?php foreach($productlist as $product) { ?>
+                            <?php if ($product['category'] == "discord") { ?>
+                                <div class="qb-banner">
+                                    <img src="<?php echo $base_url; ?><?php echo $product['img']; ?>" alt="">
 
-                            <div class="qb-banner-box">
-                                <h5>Small | <span>€3,00</span></h5>
+                                    <div class="qb-banner-box">
+                                        <h5><?php echo $product['name']; ?> | <span>€<?php echo $product['price']; ?></span></h5>
 
-                                <p><span>Ram: </span>100 MB</p>
-                                <p><span>Storage: </span>1000 MB</p>
-                                <p><span>MySQL: </span>Free MySQL</p>
-                            </div>
-                            <a href="" class="btn5">Purchase</a>
-                        </div>
+                                        <p><span>Ram: </span><?php echo $product['ram']; ?> MB</p>
+                                        <p><span>Storage: </span><?php echo $product['storage']; ?> MB</p>
+                                        <p><span>MySQL: </span>Free MySQL</p>
 
-                        <div class="qb-banner">
-                            <img src="img/discord/discord.png" alt="">
-
-                            <div class="qb-banner-box">
-                                <h5>Normal | <span>€6,00</span></h5>
-                                
-                                <p><span>Ram: </span>200 MB</p>
-                                <p><span>Storage: </span>2000 MB</p>
-                                <p><span>MySQL: </span>Free MySQL</p>
-                            </div>
-                            <a href="" class="btn5">Purchase</a>
-                        </div>
-
-                        <div class="qb-banner">
-                            <img src="img/discord/discord.png" alt="">
-
-                            <div class="qb-banner-box">
-                                <h5>Big | <span>€9,00</span></h5>
-
-                                <p><span>Ram: </span>400 MB</p>
-                                <p><span>Storage: </span>4000 MB</p>
-                                <p><span>MySQL: </span>Free MySQL</p>
-                            </div>
-                            <a href="" class="btn5">Purchase</a>
-                        </div>
+                                        <a href="<?php echo $product['purchare_link']; ?>" class="btn5">Purchase</a>
+                                    </div>
+                                </div>
+                            <?php } ?>
+                        <?php } ?>
                     </div>
                 </div>
             </section>
@@ -169,4 +117,4 @@
             </section>
         </main>
 
-        <?php include('layout/footer.php') ?>
+        <?php include('footer.php') ?>

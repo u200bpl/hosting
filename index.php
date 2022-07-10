@@ -1,51 +1,74 @@
-<!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            
-            <title>Galaxynode | Home</title>
+        <?php
+            require_once 'head.php';
+            require_once 'header.php';
+            require_once 'backend/conn.php';
 
-            <meta name="description" content="Cheap and affordable hosting for everyone on premium hardware!">
-            <link href="img/logo.png" rel="shortcut icon">
-            <meta name="keywords" content="minecraft, minecraft hosting, minecraft server, minecraft server hosting, mc, mc hosting, mc server, mc server hosting, fivem, fivem hosting, fivem server, fivem server hosting, fivem txadmin, fivem server txadmin, fivem server hosting txadmin, fivem hosting txadmin, discord, discord hosting, discord server, discord server hosting, discord bot, discord bot server, discord bot hosting">
-            <meta name="author" content="Dennis Overman">
-
-            <link rel="stylesheet" href="css/style.css">
-            <script src="https://kit.fontawesome.com/268c8277db.js" crossorigin="anonymous"></script>
-        </head>
-    <body>
-        <script type="text/javascript" src="js/slideshow.js"></script>
-
-        <header>
-            <nav>
-                <div class="wrapper">
-                    <div class="navbar">
-                        <div class="navbarleft">
-                            <a href="index.php"><h1><span>GALAXYNODE</span></h1></a>
-                        </div>
-
-                        <div class="navbarright">
-                            <a href="index.php" class="nav-active">Home</a>
-                            <a href="minecraft.php">Minecraft</a>
-                            <a href="fivem.php">Fivem</a>
-                            <a href="discord.php">Discord Bot</a>
-                            <a href="">Contact Us</a>
-                        </div>
-
-                        <div class="buttons">
-                            <button class="btn2" onclick="window.location.href='https://panel.galaxynode.net/';">GAME PANEL</button>
-                            <button class="btn">LOGIN <i class="fa-solid fa-angle-down"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        
-            <?php include('layout/header.php') ?>
-        </header>
+            basename($_SERVER['PHP_SELF']) == "index.php"
+        ?>
 
         <main>
+            <section>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <section class="stn-minecraft">
+                            <div class="wrapper">
+                                <div class="flex-box">
+                                    <div class="text-box">
+                                        <div class="topborder"></div>
+                                        <br>
+                                        <h2>MINECRAFT <span>HOSTING</span></h2>
+                                        <p>Minecraft Hosting so easy and fast that you can start building and survive as fast as you can.</p>
+                                        <a href="minecraft.php" class="btn4">VIEW PLANS</a>
+                                    </div>
+
+                                    <div class="text-box-none"></div>
+                                </div> 
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <section class="stn-fivem">
+                            <div class="wrapper">
+                                <div class="flex-box">
+                                    <div class="text-box">
+                                        <div class="topborder"></div>
+                                        <br>
+                                        <h2>FIVEM <span>HOSTING</span></h2>
+                                        <p>FiveM Hosting so easy and fast that you can start making and roleplaying as fast as you can.</p>
+                                        <a href="fivem.php" class="btn4">VIEW PLANS</a>
+                                    </div>
+
+                                    <div class="text-box-none"></div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <section class="stn-discord">
+                            <div class="wrapper">
+                                <div class="flex-box">
+                                    <div class="text-box">
+                                        <div class="topborder"></div>
+                                        <br>
+                                        <h2>DISCORD BOT <span>HOSTING</span></h2>
+                                        <p>Discord Bot Hosting so easy and fast that you can start making and roleplaying as fast as you can.</p>
+                                        <a href="discord.php" class="btn4">VIEW PLANS</a>
+                                    </div>
+                                    <div class="text-box-none"></div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="dots">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+                </div>
+            </section>
             <section class="space">
                 <div class="wrapper">
                     <h3 class="space2">Choose a plan</h3>
@@ -53,7 +76,7 @@
                         <div class="banner">
                             <img src="img/minecraft2.jpg" alt="">
                             <div class="banner-box">
-                                <h5>MINECRAFT JAVA</h5>
+                                <h2>MINECRAFT JAVA</h2>
                                 <p>Starting at <span>4,00 / Mo</span>, Explore, craft and conquer on our premium minecraft servers.</p>
                                 <a class="btn3" href="minecraft.php">Get Started</a>
                             </div>
@@ -62,7 +85,7 @@
                         <div class="banner">
                             <img src="img/fivem2.jpg" alt="">
                             <div class="banner-box">
-                                <h5>FIVEM</h5>
+                                <h2>FIVEM</h2>
                                 <p>Starting at <span>3,50 / Mo</span>, Explore, escape and roleplay on our premium fivem servers.</p>
                                 <a class="btn3" href="fivem.php">Get Started</a>
                             </div>
@@ -71,7 +94,7 @@
                         <div class="banner">
                             <img src="img/discord2.jpg" alt="">
                             <div class="banner-box">
-                                <h5>DISCORD</h5>
+                                <h2>DISCORD</h2>
                                 <p>Starting at <span>3,50 / Mo</span>, Make your Discord cummunity better on our premium discord bot hosting.</p>
                                 <a class="btn3" href="discord.php">Get Started</a>
                             </div>
@@ -148,4 +171,4 @@
             </section>
         </main>
 
-        <?php include('layout/footer.php') ?>
+        <?php include('footer.php') ?>
