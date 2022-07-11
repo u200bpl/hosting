@@ -5,14 +5,17 @@ if (basename($_SERVER['PHP_SELF']) == "index.php") {
 
 if (basename($_SERVER['PHP_SELF']) == "minecraft.php") {
     $minecraft = true;
+    $dropdown = true;
 }
 
 if (basename($_SERVER['PHP_SELF']) == "fivem.php") {
     $fivem = true;
+    $dropdown = true;
 }
 
 if (basename($_SERVER['PHP_SELF']) == "discord.php") {
     $discord = true;
+    $dropdown2 = true;
 }
 ?>
 

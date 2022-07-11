@@ -1,6 +1,3 @@
-/*       */
-/* FONTS */
-/*       */
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
 
 :root {
@@ -36,6 +33,69 @@ body {
 /*         */
 /* NAV BAR */
 /*         */
+.dropbtn {
+    font-size: 20px;
+    border: none;
+    background: none;
+    color: lightgray;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    z-index: 1;
+    background: rgba(var(--main-rgb), 0.85);
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.cat-game {
+    padding: 0 16px;
+    text-align: start;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cat-game-info > a {
+    color: var(--hover);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-active-2 {
+    border-bottom: var(--purple2) solid 3px;
+}
+
+.nav-active a {
+    color: var(--purple2);
+}
+
+.cat-game a {
+    text-decoration: none;
+    display: inline;
+}
+
+.cat-game-img > img {
+    height: 40px;
+}
+
+.dropdown-cat {
+    display: flex;
+    flex-direction: column;
+}
+
+.cat-game-info {
+    padding: 10px;
+}
+
 nav {
     width: 100%;
     background: rgba(var(--main-rgb), 0.85);
@@ -50,7 +110,7 @@ nav {
     align-items: center;
 }
 
-.navbar a {
+.navbarright > a {
     color: var(--hover);
     text-decoration: none;
     font-size: 20px;
@@ -74,20 +134,19 @@ nav {
     color: var(--hover);
 }
 
-.navbarright a {
+.navbarright > a {
     padding: 5px 0px;
     margin: 0 15px;
 }
 
-.navbarright button {
+.navbarright > button {
     padding: 10px 15px;
     background: var(--purple);
     border: none;
     color: white;
-    margin: 0 0 0 15px;
 }
 
-.buttons button {
+.buttons > button {
     margin: 0 10px;
 }
 
@@ -290,9 +349,6 @@ nav {
 /*         */
 /* BORDERS */
 /*         */
-.nav-active {
-    border-bottom: 3px var(--purple2) solid;
-}
 
 .topborder {
     border-bottom: 5px var(--purple2) solid;
@@ -369,6 +425,17 @@ h3 {
     border-bottom: 5px var(--purple2) solid;
     display: inline;
 }
+
+h2 {
+    font-size: 35px;
+    border-bottom: 5px var(--purple2) solid;
+    display: inline;
+}
+
+h5 {
+    font-size: 35px;
+}
+
 .services-flex {
     margin-top: 25px;
     display: flex;
@@ -431,7 +498,7 @@ h3 {
     font-size: 25px;
 }
 
-.banner-box button {
+.banner-box > button {
     background: none;
     border: none;
     color: var(--purple2);
