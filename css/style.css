@@ -7,9 +7,14 @@
     --main: #171A43;
     --main-rgb: 23, 26, 67;
     --second: #1D2353;
-    --purple: #7D3CEE;
-    --purple2: #a271f6;
     --hover: lightgray;
+    /* PURPLE */
+    /* --purple: #7D3CEE;
+    --purple2: #a271f6; */
+
+    /* RED */
+    --purple: #f67171;
+    --purple2: #f67171;
 }
 
 * {
