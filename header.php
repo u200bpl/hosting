@@ -62,7 +62,16 @@
 
                     <div class="buttons">
                         <button class="btn2" onclick="window.location.href='https://panel.galaxynode.net/';">GAME PANEL</button>
-                        <button class="btn">LOGIN <i class="fa-solid fa-angle-down"></i></button>
+
+                        <div class="dropdown">
+                            <button class="btn">Login <i class="fa-solid fa-angle-down"></i></button>
+                            <div class="dropdown-content">
+                                <div class="dropdown-cat">
+                                    <a href="">Login</a>
+                                    <a href="">Register</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
