@@ -73,7 +73,7 @@
                     <h2 class="space">Choose a plan</h2>
                     <div class="services-flex">
                         <div class="banner">
-                            <img src="img/minecraft2.jpg" alt="">
+                            <img src="<?php echo $base_url; ?>/img/minecraft2.jpg" alt="">
                             <div class="banner-box">
                                 <h5>MINECRAFT JAVA</h5>
                                 <p>Starting at <span>4,00 / Mo</span>, Explore, craft and conquer on our premium minecraft servers.</p>
@@ -82,7 +82,7 @@
                         </div>
 
                         <div class="banner">
-                            <img src="img/fivem2.jpg" alt="">
+                            <img src="<?php echo $base_url; ?>/img/fivem2.jpg" alt="">
                             <div class="banner-box">
                                 <h5>FIVEM</h5>
                                 <p>Starting at <span>6,00 / Mo</span>, Explore, escape and roleplay on our premium fivem servers.</p>
@@ -91,7 +91,7 @@
                         </div>
 
                         <div class="banner">
-                            <img src="img/discord2.jpg" alt="">
+                            <img src="<?php echo $base_url; ?>/img/discord2.jpg" alt="">
                             <div class="banner-box">
                                 <h5>DISCORD</h5>
                                 <p>Starting at <span>3,00 / Mo</span>, Make your Discord cummunity better on our premium discord bot hosting.</p>
@@ -163,11 +163,11 @@
                         </div>
 
                         <div class="panel-box-img">
-                            <img src="img/panel.jpg" alt="Game Panel Screenshot">
+                            <img src="<?php echo $base_url; ?>/img/panel.jpg" alt="Game Panel Screenshot">
                         </div>
                     </div>
                 </div>
             </section>
         </main>
 
-        <?php include('footer.php') ?>
+        <?php require_once 'footer.php'; ?>

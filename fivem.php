@@ -30,10 +30,10 @@
                     <div class="services-flex">
                         <?php foreach($productlist as $product) { ?>
                             <?php if ($product['category'] == "fivem") { ?>
-                                <div class="mc-banner">
-                                    <img src="<?php echo $base_url; ?><?php echo $product['img']; ?>" alt="">
+                                <div class="plan-banner">
+                                    <img src="<?php echo $base_url; ?>/<?php echo $product['img']; ?>" alt="">
 
-                                    <div class="mc-banner-box">
+                                    <div class="plan-banner-box">
                                         <h5><?php echo $product['name']; ?> | <span>€<?php echo $product['price']; ?></span></h5>
 
                                         <p><span>Ram: </span><?php echo $product['ram']; ?> MB</p>
@@ -118,4 +118,4 @@
             </section>
         </main>
 
-        <?php include('footer.php') ?>
+        <?php require_once 'footer.php'; ?>

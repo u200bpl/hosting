@@ -23,46 +23,49 @@
             <section class="space">
                 <div class="wrapper">
                     <div class="services-flex">
-                        <div class="qb-banner">
-                            <img src="img/serverspecs/customer.png" alt="">
+                        <div class="plan-banner">
+                            <img src="<?php echo $base_url; ?>/img/serverspecs/customer.png" alt="">
 
-                            <div class="sp-banner-box">
+                            <div class="plan-banner-box">
                                 <h5>Customer Panel</h5>
                                 <p><span>CPU: </span>Ryzen 5 3600</p>
                                 <p><span>Ram: </span>8GB</p>
                                 <p><span>Storage: </span>80GB</p>
                                 <p><span>Down Speed: </span>500Mbit</p>
                                 <p><span>Up Speed: </span>500Mbit</p>
+
+                                <a href="" class="btn5">See Status</a>
                             </div>
-                            <a href="" class="btn5">See Status</a>
                         </div>
 
-                        <div class="sp-banner">
-                            <img src="img/serverspecs/db.png" alt="">
+                        <div class="plan-banner">
+                            <img src="<?php echo $base_url; ?>/img/serverspecs/db.png" alt="">
 
-                            <div class="sp-banner-box">
+                            <div class="plan-banner-box">
                                 <h5>SQL-01 (MySQL)</h5>
                                 <p><span>CPU: </span>Ryzen 5 3600</p>
                                 <p><span>Ram: </span>8GB</p>
                                 <p><span>Storage: </span>80GB</p>
                                 <p><span>Down Speed: </span>500Mbit</p>
                                 <p><span>Up Speed: </span>500Mbit</p>
+
+                                <a href="" class="btn5">See Status</a>
                             </div>
-                            <a href="https://stats.uptimerobot.com/M5Pzjs29lr/790149017" class="btn5">See Status</a>
                         </div>
 
-                        <div class="sp-banner">
-                            <img src="img/serverspecs/node.png" alt="">
+                        <div class="plan-banner">
+                            <img src="<?php echo $base_url; ?>/img/serverspecs/node.png" alt="">
 
-                            <div class="sp-banner-box">
+                            <div class="plan-banner-box">
                             <h5>GAME-01</h5>
                                 <p><span>CPU: </span>Ryzen 5 3600</p>
                                 <p><span>Ram: </span>128GB</p>
                                 <p><span>Storage: </span>2TB NVMe SSD</p>
                                 <p><span>Down Speed: </span>1000Mbit</p>
                                 <p><span>Up Speed: </span>1000Mbit</p>
+
+                                <a href="" class="btn5">See Status</a>
                             </div>
-                            <a href="https://stats.uptimerobot.com/M5Pzjs29lr/790149389" class="btn5">See Status</a>
                         </div>
                     </div>
                 </div>
@@ -129,11 +132,11 @@
                         </div>
 
                         <div class="panel-box-img">
-                            <img src="img/panel.jpg" alt="Game Panel Screenshot">
+                            <img src="<?php echo $base_url; ?>/img/panel.jpg" alt="Game Panel Screenshot">
                         </div>
                     </div>
                 </div>
             </section>
         </main>
 
-        <?php include('footer.php') ?>
+        <?php require_once 'footer.php'; ?>

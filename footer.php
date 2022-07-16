@@ -13,17 +13,17 @@
 
                     <div class="footer-col">
                         <h5>Server Hosting</h5>
-                        <a href="<?php echo $base_url; ?>minecraft.php">Minecraft Hosting</a>
-                        <a href="<?php echo $base_url; ?>fivem.php">FiveM Hosting</a>
-                        <a href="<?php echo $base_url; ?>discord.php">Discord Bot Hosting</a>
+                        <a href="<?php echo $base_url; ?>/minecraft.php">Minecraft Hosting</a>
+                        <a href="<?php echo $base_url; ?>/fivem.php">FiveM Hosting</a>
+                        <a href="<?php echo $base_url; ?>/discord.php">Discord Bot Hosting</a>
                     </div>
 
                     <div class="footer-col">
                         <h5>Company</h5>
-                        <a href="<?php echo $base_url; ?>">About Us</a>
-                        <a href="<?php echo $base_url; ?>">Terms of Service</a>
-                        <a href="<?php echo $base_url; ?>">Privacy policy</a>
-                        <a href="<?php echo $base_url; ?>serverspecs.php">Server Specifications</a>
+                        <a href="<?php echo $base_url; ?>/">About Us</a>
+                        <a href="<?php echo $base_url; ?>/">Terms of Service</a>
+                        <a href="<?php echo $base_url; ?>/">Privacy policy</a>
+                        <a href="<?php echo $base_url; ?>/serverspecs.php">Server Specifications</a>
                     </div>
 
                     <div class="footer-col">
@@ -50,5 +50,6 @@
         </footer>
     </body>
 
-    <script type="text/javascript" src="<?php echo $base_url; ?>js/slideshow.js"></script>
+    <script type="text/javascript" src="<?php echo $base_url; ?>/js/slideshow.js"></script>
+    <script type="text/javascript" src="<?php echo $base_url; ?>/js/disable_password.js"></script>
 </html>
