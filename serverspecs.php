@@ -11,7 +11,7 @@
                         <div class="mc-text-box">
                             <div class="topborder"></div>
                             <br>
-                            <h2>SERVER <span>SPECIFICATION</span></h2>
+                            <h5>SERVER <span>SPECIFICATION</span></h5>
                             <p>See our <span>premium</span> and modern hardware.</p>
                         </div>
 

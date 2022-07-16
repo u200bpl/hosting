@@ -16,7 +16,7 @@
                         <div class="mc-text-box">
                             <div class="topborder"></div>
                             <br>
-                            <h2>FiveM <span>HOSTING</span></h2>
+                            <h5>FiveM <span>HOSTING</span></h5>
                             <p>Host your own FiveM server on our <span>premium</span> and modern hardware. Pay, Play and Survive!</p>
                         </div>
 

@@ -24,6 +24,10 @@ body {
     background: var(--main);
 }
 
+a {
+    text-decoration: none;
+}
+
 .wrapper {
     text-align: center;
     width: 1350px;

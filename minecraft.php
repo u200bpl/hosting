@@ -16,7 +16,7 @@
                         <div class="mc-text-box">
                             <div class="topborder"></div>
                             <br>
-                            <h2>MINECRAFT <span>HOSTING</span></h2>
+                            <h5>MINECRAFT <span>HOSTING</span></h5>
                             <p>Host your own Minecraft <span>1.19</span> server on our <span>premium</span> and modern hardware. Pay, Play and Survive!</p>
                         </div>
 
