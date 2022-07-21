@@ -76,7 +76,7 @@
                             <img src="<?php echo $base_url; ?>/img/minecraft2.jpg" alt="">
                             <div class="banner-box">
                                 <h5>MINECRAFT JAVA</h5>
-                                <p>Starting at <span>4,00 / Mo</span>, Explore, craft and conquer on our premium minecraft servers.</p>
+                                <p>Starting at <span>2,50 / Mo</span>, Explore, craft and conquer on our premium minecraft servers.</p>
                                 <a class="btn3" href="minecraft.php">Get Started</a>
                             </div>
                         </div>
@@ -86,7 +86,7 @@
                             <div class="banner-box">
                                 <h5>FIVEM</h5>
                                 <p>Starting at <span>6,00 / Mo</span>, Explore, escape and roleplay on our premium fivem servers.</p>
-                                <a class="btn3" href="fivem.php">Get Started</a>
+                                <a class="btn3" href="fivem.php">Coming Soon</a>
                             </div>
                         </div>
 
@@ -94,8 +94,8 @@
                             <img src="<?php echo $base_url; ?>/img/discord2.jpg" alt="">
                             <div class="banner-box">
                                 <h5>DISCORD</h5>
-                                <p>Starting at <span>3,00 / Mo</span>, Make your Discord cummunity better on our premium discord bot hosting.</p>
-                                <a class="btn3" href="discord.php">Get Started</a>
+                                <p>Starting at <span>1,50 / Mo</span>, Make your Discord cummunity better on our premium discord bot hosting.</p>
+                                <a class="btn3" href="discord.php">Coming Soon</a>
                             </div>
                         </div>
                     </div>

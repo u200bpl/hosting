@@ -31,8 +31,6 @@
                                 <p><span>CPU: </span>Ryzen 5 3600</p>
                                 <p><span>Ram: </span>8GB</p>
                                 <p><span>Storage: </span>80GB</p>
-                                <p><span>Down Speed: </span>500Mbit</p>
-                                <p><span>Up Speed: </span>500Mbit</p>
 
                                 <a href="" class="btn5">See Status</a>
                             </div>
@@ -46,8 +44,6 @@
                                 <p><span>CPU: </span>Ryzen 5 3600</p>
                                 <p><span>Ram: </span>8GB</p>
                                 <p><span>Storage: </span>80GB</p>
-                                <p><span>Down Speed: </span>500Mbit</p>
-                                <p><span>Up Speed: </span>500Mbit</p>
 
                                 <a href="" class="btn5">See Status</a>
                             </div>
@@ -57,12 +53,10 @@
                             <img src="<?php echo $base_url; ?>/img/serverspecs/node.png" alt="">
 
                             <div class="plan-banner-box">
-                            <h5>GAME-01</h5>
-                                <p><span>CPU: </span>Ryzen 5 3600</p>
+                            <h5>MC-FRA-01</h5>
+                                <p><span>CPU: </span>Ryzen 7 3800x</p>
                                 <p><span>Ram: </span>128GB</p>
                                 <p><span>Storage: </span>2TB NVMe SSD</p>
-                                <p><span>Down Speed: </span>1000Mbit</p>
-                                <p><span>Up Speed: </span>1000Mbit</p>
 
                                 <a href="" class="btn5">See Status</a>
                             </div>

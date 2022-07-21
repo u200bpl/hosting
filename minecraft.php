@@ -42,7 +42,7 @@
                                         <p><span>Storage: </span><?php echo $product['storage']; ?> MB</p>
                                         <p><span>MySQL: </span>Free MySQL</p>
 
-                                        <a href="<?php echo $product['purchare_link']; ?>" class="btn5">Purchase</a>
+                                        <a href="<?php echo $product['purchare_link']; ?>" class="btn5"><?php echo $product['button_txt']; ?></a>
                                     </div>
                                 </div>
                             <?php } ?>

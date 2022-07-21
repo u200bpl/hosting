@@ -32,7 +32,7 @@
                                             </div>
                                             <div class="<?php if(isset($fivem)){echo "nav-active";} ?> cat-game-info">
                                                 <a href="<?php echo $base_url; ?>/fivem.php">Fivem</a>
-                                                <p>Fivem Servers</p>
+                                                <p>COMING SOON</p>
                                             </div>
                                         </div>
                                     </a>
@@ -51,7 +51,7 @@
                                             </div>
                                             <div class="<?php if(isset($discord)){echo "nav-active";} ?> cat-game-info">
                                                 <a href="<?php echo $base_url; ?>/discord.php">Discord Bot</a>
-                                                <p>Discord Bot</p>
+                                                <p>COMING SOON</p>
                                             </div>
                                         </div>
                                     </a>
