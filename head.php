@@ -41,7 +41,7 @@ if (basename($_SERVER['PHP_SELF']) == "login.php") {
             <title><?php echo $site_name; ?> | <?php echo basename($_SERVER['PHP_SELF'],'.php'); ?></title>
 
             <meta name="description" content="Cheap and affordable hosting for everyone on premium hardware!">
-            <link href="<?php echo $base_url; ?>/img/logo.png" rel="shortcut icon">
+            <link href="<?php echo $base_url; ?>/img/logo2.png" rel="shortcut icon">
             <meta name="keywords" content="minecraft, minecraft hosting, minecraft server, minecraft server hosting, mc, mc hosting, mc server, mc server hosting, fivem, fivem hosting, fivem server, fivem server hosting, fivem txadmin, fivem server txadmin, fivem server hosting txadmin, fivem hosting txadmin, discord, discord hosting, discord server, discord server hosting, discord bot, discord bot server, discord bot hosting">
             <meta name="author" content="Dennis Overman">
             
