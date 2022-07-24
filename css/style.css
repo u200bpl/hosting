@@ -30,6 +30,10 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    text-transform: uppercase;
+}
+
 .wrapper {
     text-align: center;
     width: 1350px;
@@ -338,7 +342,7 @@ nav {
     border: none;
     margin: 10px 0;
     top: 25px;
-    padding: 15px 150px;
+    padding: 15px 125px;
     border-radius: 10px;
     font-size: var(--font-size-normale);
     cursor: pointer;
@@ -443,7 +447,6 @@ h5 {
 }
 
 .services-flex {
-    margin-top: 25px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -583,13 +586,13 @@ h5 {
 /*                */
 /* MINECRAFT PAGE */
 /*                */
-.mc-text-box {
+.text-box {
     color: white;
     width: 480px;
     text-align: left;
 }
 
-.mc-text-box h2 {
+.text-box h2 {
     font-size: 35px;
 }
 
@@ -607,7 +610,7 @@ h5 {
 }
 
 .plan-banner {
-    margin: 115px 0;
+    margin: 50px 0;
 }
 
 .plan-banner img {
@@ -627,8 +630,8 @@ h5 {
 .plan-banner-box {
     background: var(--second);
     padding: 65px 15px;
-    /* width: 400px; */
-    /* height: 220px; */
+    width: 400px;
+    max-width: 400px;
 }
 
 .plan-banner-box h5 {

@@ -2,12 +2,12 @@
             <div class="wrapper">
                 <div class="footer-box">
                     <div class="footer-col">
-                        <h5>GalaxyNode</h5>
-                        <p>Galaxynode is a starting hosting and we focus on quality for a low price.</p>
+                        <h5><?php echo $site_name; ?></h5>
+                        <p><?php echo $site_name; ?> is a starting hosting and we focus on quality for a low price.</p>
                         <div class="footer-icons">
-                            <a href="https://discord.com/invite/DqACEQkUvF"><i class="fa-brands fa-discord"></i></a>
-                            <a href="https://www.instagram.com/galaxynode0/"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://twitter.com/Galaxynode0"><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-discord"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
                         </div>
                     </div>
 
@@ -36,7 +36,7 @@
 
                 <div class="footer-box2">
                     <div class="copy">
-                        <p>&copy; GalaxyNode - 2022</p>
+                        <p>&copy; <?php echo $site_name; ?> - 2022</p>
                     </div>
                     
                     <div class="pay">

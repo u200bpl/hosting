@@ -3,7 +3,7 @@
             <div class="wrapper">
                 <div class="navbar">
                     <div class="navbarleft">
-                        <a href="<?php echo $base_url; ?>/index.php"><h1><span>GALAXYNODE</span></h1></a>
+                        <a href="<?php echo $base_url; ?>/index.php"><h1><span><?php echo $site_name; ?></span></h1></a>
                     </div>
 
                     <div class="navbarright">
