@@ -3,6 +3,7 @@
             <div class="wrapper">
                 <div class="navbar">
                     <div class="navbarleft">
+                        <a href="<?php echo $base_url; ?>/index.php"><img src="img/logo2.png" alt="Website logo"></a>
                         <a href="<?php echo $base_url; ?>/index.php"><h1><span><?php echo $site_name; ?></span></h1></a>
                     </div>
 

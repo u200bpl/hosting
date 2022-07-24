@@ -1,6 +1,8 @@
 <section class="space">
     <div class="wrapper">
-        <h3>Our Services</h3>
+        <div class="space2">
+            <h3>Our Services</h3>
+        </div>
         <div class="services-flex">
             <div class="services">
                 <i class="fa-solid fa-tags"></i>

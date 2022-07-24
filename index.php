@@ -70,7 +70,9 @@
             
             <section class="space">
                 <div class="wrapper">
-                    <h2 class="space">Choose a plan</h2>
+                    <div class="space2">
+                        <h2>Choose a plan</h2>
+                    </div>
                     <div class="services-flex">
                         <div class="banner">
                             <img src="<?php echo $base_url; ?>/img/minecraft2.jpg" alt="">
