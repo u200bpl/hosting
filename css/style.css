@@ -7,8 +7,7 @@
     --second2: #1D2353;
     --hover: lightgray;
     --font-size-normale: 20px;
-    --purple: #f67171;
-    --purple2: #f67171;
+    --red: #f67171;
 }
 
 * {
@@ -77,11 +76,11 @@ h1 {
 
 .nav-active-2 {
     padding: 0 0 5px 0;
-    border-bottom: var(--purple2) solid 3px;
+    border-bottom: var(--red) solid 3px;
 }
 
 .nav-active a {
-    color: var(--purple2);
+    color: var(--red);
 }
 
 .cat-game a {
@@ -123,7 +122,7 @@ nav {
 }
 
 .navbar a:hover {
-    color: var(--purple2);
+    color: var(--red);
 }
 
 .navbarright a:hover {
@@ -133,7 +132,7 @@ nav {
 }
 
 .navbarleft h1 span {
-    color: var(--purple2);
+    color: var(--red);
 }
 
 .navbarleft h1 span:hover {
@@ -146,7 +145,7 @@ nav {
 
 .navbarright > button {
     padding: 10px 15px;
-    background: var(--purple);
+    background: var(--red);
     border: none;
     color: white;
 }
@@ -205,7 +204,7 @@ nav {
 }
 
 .text-box span {
-    color: var(--purple2);
+    color: var(--red);
 }
 
 /*                    */
@@ -233,7 +232,7 @@ nav {
 }
 
 .panel-box-text li span{
-    color: var(--purple2);
+    color: var(--red);
 }
 
 .panel-box-text p {
@@ -260,7 +259,7 @@ nav {
 }
 
 .btn {
-    background: var(--purple);
+    background: var(--red);
     position: relative;
     color: white;
     text-decoration: none;
@@ -274,14 +273,14 @@ nav {
 .btn:hover {
     background: white;
     position: relative;
-    color: var(--purple);
+    color: var(--red);
     border: none;
 }
 
 .btn2 {
     background: white;
     position: relative;
-    color: var(--purple);
+    color: var(--red);
     text-decoration: none;
     border: none;
     margin: 10px 0;
@@ -291,7 +290,7 @@ nav {
 }
 
 .btn2:hover {
-    background: var(--purple);
+    background: var(--red);
     position: relative;
     color: white;
     border: none;
@@ -299,7 +298,7 @@ nav {
 
 .btn3 {
     position: relative;
-    color: var(--purple2);
+    color: var(--red);
     text-decoration: none;
     top: 10px;
     font-size: 26px;
@@ -310,7 +309,7 @@ nav {
 }
 
 .btn4 {
-    background: var(--purple);
+    background: var(--red);
     position: relative;
     color: white;
     text-decoration: none;
@@ -325,12 +324,12 @@ nav {
 .btn4:hover {
     background: white;
     position: relative;
-    color: var(--purple);
+    color: var(--red);
     border: none;
 }
 
 .btn5 {
-    background: var(--purple);
+    background: var(--red);
     position: relative;
     color: white;
     text-decoration: none;
@@ -346,7 +345,7 @@ nav {
 .btn5:hover {
     background: white;
     position: relative;
-    color: var(--purple);
+    color: var(--red);
     border: none;
 }
 
@@ -356,12 +355,12 @@ nav {
 /*         */
 
 .topborder {
-    border-bottom: 5px var(--purple2) solid;
+    border-bottom: 5px var(--red) solid;
     width: 50px;
 }
 
 .bottomborder {
-    border-bottom: 5px var(--purple2) solid;
+    border-bottom: 5px var(--red) solid;
     width: 50px;
 }
 
@@ -396,11 +395,11 @@ nav {
 }
 
 .dot:hover {
-    background-color: var(--purple2);
+    background-color: var(--red);
 }
 
 .active {
-    background-color: var(--purple2);
+    background-color: var(--red);
     padding: 0 10px;
 }
 
@@ -427,13 +426,13 @@ nav {
 /*              */
 h3 {
     font-size: 35px;
-    border-bottom: 5px var(--purple2) solid;
+    border-bottom: 5px var(--red) solid;
     display: inline;
 }
 
 h2 {
     font-size: 35px;
-    border-bottom: 5px var(--purple2) solid;
+    border-bottom: 5px var(--red) solid;
     display: inline;
 }
 
@@ -457,7 +456,7 @@ h5 {
 }
 
 .services i {
-    background: var(--purple);
+    background: var(--red);
     padding: 10px;
     border-radius: 10px;
     font-size: 28px;
@@ -505,7 +504,7 @@ h5 {
 .banner-box > button {
     background: none;
     border: none;
-    color: var(--purple2);
+    color: var(--red);
     text-decoration: none;
     margin-top: 15px;
     font-size: 25px;
@@ -513,7 +512,7 @@ h5 {
 }
 
 .banner-box span {
-    color: var(--purple2);
+    color: var(--red);
 }
 
 /*        */
@@ -619,7 +618,7 @@ h5 {
 }
 
 .plan-text-box span {
-    color: var(--purple2);
+    color: var(--red);
 }
 
 .plan-banner-box {
@@ -641,7 +640,7 @@ h5 {
 }
 
 .plan-banner-box span {
-    color: var(--purple2);
+    color: var(--red);
 }
 
 .plan-banner-box-space {
@@ -680,7 +679,7 @@ h5 {
 }
 
 .form-group input[type=submit] {
-    background: var(--purple);
+    background: var(--red);
     position: relative;
     color: white;
     text-decoration: none;
@@ -695,7 +694,7 @@ h5 {
 .form-group input[type=submit]:hover {
     background: white;
     position: relative;
-    color: var(--purple);
+    color: var(--red);
     border: none;
 }
 
@@ -714,7 +713,7 @@ h5 {
 }
 
 .already a:hover {
-    color: var(--purple);
+    color: var(--red);
 }
 
 
@@ -744,7 +743,7 @@ h5 {
 }
 
 .dash-logo h1 {
-    color: var(--purple2);
+    color: var(--red);
     padding: 0 15px;
 }
 
