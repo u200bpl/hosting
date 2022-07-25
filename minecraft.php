@@ -3,7 +3,7 @@
             require_once 'header.php';
             require_once 'backend/conn.php';
 
-            $query = "SELECT * FROM products";
+            $query = "SELECT * FROM products_mc";
             $statement = $conn->prepare($query);
             $statement->execute();
             $productlist = $statement->fetchAll(PDO::FETCH_ASSOC);
@@ -29,22 +29,22 @@
                 <div class="wrapper">
                     <div class="services-flex">
                         <?php foreach($productlist as $product) { ?>
-                            <?php if ($product['category'] == "minecraft") { ?>
-                                <div class="plan-banner">
-                                    <img src="<?php echo $base_url; ?>/<?php echo $product['img']; ?>" alt="">
-
-                                    <div class="plan-banner-box">
-                                        <h5><?php echo $product['name']; ?> | <span>€<?php echo $product['price']; ?></span></h5>
-
-                                        <p><span>Ram: </span><?php echo $product['ram']; ?> MB</p>
-                                        <p><span>Players: </span><?php echo $product['players']; ?></p>
-                                        <p><span>Storage: </span><?php echo $product['storage']; ?> MB</p>
-                                        <p><span>MySQL: </span>Free MySQL</p>
-
-                                        <a href="<?php echo $product['purchare_link']; ?>" class="btn5"><?php echo $product['button_txt']; ?></a>
-                                    </div>
+                            <div class="plan-banner">
+                                <img src="<?php echo $base_url; ?>/<?php echo $product['img']; ?>" alt="">
+                                <div class="plan-banner-box">
+                                    <h5><?php echo $product['name']; ?> | <span>€<?php echo $product['price']; ?></span></h5>
+                                    <?php if ($product['recommended'] == true) { ?>
+                                        <p>Recomende for <span>1.16</span> and above</p>
+                                    <?php } else { ?>
+                                        <p><span>NOT</span> recomende for <span>1.16</span> and above</p>
+                                    <?php } ?>
+                                    <p><span>Ram: </span><?php echo $product['ram']; ?> MB</p>
+                                    <p><span>Players: </span><?php echo $product['players']; ?></p>
+                                    <p><span>Storage: </span><?php echo $product['storage']; ?> MB</p>
+                                    <p><span>MySQL: </span>Free MySQL</p>
+                                    <a href="<?php echo $product['purchare_link']; ?>" class="btn5"><?php echo $product['button_txt']; ?></a>
                                 </div>
-                            <?php } ?>
+                            </div>
                         <?php } ?>
                     </div>
                 </div>
