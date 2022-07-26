@@ -12,7 +12,7 @@
                     <li><span><i class="fa-solid fa-circle-check"></i></span> Fast Responsive Panel</li>
                 </ul>
 
-                <button class="btn" onclick="window.location.href='https://panel.galaxynode.net/';">Go to our panel</button>
+                <button class="btn" onclick="window.location.href='https://panel.flamenode.net/';">Go to our panel</button>
             </div>
 
             <div class="panel-box-img">
