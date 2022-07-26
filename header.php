@@ -62,11 +62,9 @@
                     </div>
 
                     <div class="buttons">
-                        <button class="btn2" onclick="window.location.href='https://panel.galaxynode.net/';">GAME PANEL</button>
-
                         <div class="dropdown">
                             <?php if(!isset($_SESSION['user_id'])) { ?>
-                                <button class="btn">Login <i class="fa-solid fa-angle-down"></i></button>
+                                <button class="btn">Panels <i class="fa-solid fa-angle-down"></i></button>
                                 <div class="dropdown-content">
                                     <div class="dropdown-cat">
                                         <a href="<?php echo $base_url; ?>/login/login.php">
@@ -75,8 +73,8 @@
                                                     <img src="<?php echo $base_url; ?>/img/other/login.png" alt="">
                                                 </div>
                                                 <div class="<?php if(isset($login)){echo "nav-active";} ?> cat-game-info">
-                                                    <a href="<?php echo $base_url; ?>/login/login.php">Login</a>
-                                                    <p>Already has a account?</p>
+                                                    <a href="">Customer Panel</a>
+                                                    <p>Go to our customer portal</p>
                                                 </div>
                                             </div>
                                         </a>
@@ -87,8 +85,8 @@
                                                     <img src="<?php echo $base_url; ?>/img/other/login.png" alt="">
                                                 </div>
                                                 <div class="<?php if(isset($register)){echo "nav-active";} ?> cat-game-info">
-                                                    <a href="<?php echo $base_url; ?>/register/register.php">Register</a>
-                                                    <p>Make here your own account</p>
+                                                    <a href="https://panel.flamenode.net/">Game Panel</a>
+                                                    <p>Go to our game panel</p>
                                                 </div>
                                             </div>
                                         </a>

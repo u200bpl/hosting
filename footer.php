@@ -5,7 +5,7 @@
                         <h5><?php echo $site_name; ?></h5>
                         <p><?php echo $site_name; ?> is a starting hosting and we focus on quality for a low price.</p>
                         <div class="footer-icons">
-                            <a href=""><i class="fa-brands fa-discord"></i></a>
+                            <a href="https://discord.com/invite/xqEeP9AHuq"><i class="fa-brands fa-discord"></i></a>
                             <a href=""><i class="fa-brands fa-instagram"></i></a>
                             <a href=""><i class="fa-brands fa-twitter"></i></a>
                         </div>
@@ -29,8 +29,8 @@
                     <div class="footer-col">
                         <h5>Support</h5>
                         <a href="">Submit a Ticket</a>
-                        <a href="https://stats.uptimerobot.com/M5Pzjs29lr">Server Status</a>
-                        <a href="https://discord.com/invite/DqACEQkUvF">Discord</a>
+                        <a href="">Server Status</a>
+                        <a href="https://discord.com/invite/xqEeP9AHuq">Discord</a>
                     </div>
                 </div>
 
