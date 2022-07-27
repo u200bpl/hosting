@@ -15,7 +15,7 @@
                                         <div class="topborder"></div>
                                         <br>
                                         <h5>MINECRAFT <span>HOSTING</span></h5>
-                                        <p>Minecraft Hosting so easy and fast that you can start building and survive as fast as you can.</p>
+                                        <p>Host your own Minecraft <span>1.19</span> server on our <span>premium</span> and modern hardware. Pay, Play and Survive!</p>
                                         <a href="minecraft.php" class="btn4">VIEW PLANS</a>
                                     </div>
 
@@ -33,7 +33,7 @@
                                         <div class="topborder"></div>
                                         <br>
                                         <h5>DISCORD BOT <span>HOSTING</span></h5>
-                                        <p>Discord Bot Hosting so easy and fast that you can start making and roleplaying as fast as you can.</p>
+                                        <p>Host your own Discord Bot on our <span>premium</span> and modern hardware. Pay, Make and Start!</p>
                                         <a href="discord.php" class="btn4">VIEW PLANS</a>
                                     </div>
                                     <div class="text-box-none"></div>
