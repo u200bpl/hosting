@@ -58,7 +58,7 @@
                                 <p><span>Ram: </span>128GB</p>
                                 <p><span>Storage: </span>2TB NVMe SSD</p>
 
-                                <a href="" class="btn5">See Status</a>
+                                <a href="https://stats.uptimerobot.com/wRz4jcvlyD/792343967" class="btn5">See Status</a>
                             </div>
                         </div>
                     </div>

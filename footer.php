@@ -29,7 +29,7 @@
                     <div class="footer-col">
                         <h5>Support</h5>
                         <a href="">Submit a Ticket</a>
-                        <a href="">Server Status</a>
+                        <a href="https://stats.uptimerobot.com/wRz4jcvlyD">Server Status</a>
                         <a href="https://discord.com/invite/xqEeP9AHuq">Discord</a>
                     </div>
                 </div>
