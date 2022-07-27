@@ -26,24 +26,6 @@
                     </div>
 
                     <div class="mySlides fade">
-                        <section class="stn-fivem">
-                            <div class="wrapper">
-                                <div class="flex-box">
-                                    <div class="text-box">
-                                        <div class="topborder"></div>
-                                        <br>
-                                        <h5>FIVEM <span>HOSTING</span></h5>
-                                        <p>FiveM Hosting so easy and fast that you can start making and roleplaying as fast as you can.</p>
-                                        <a href="fivem.php" class="btn4">VIEW PLANS</a>
-                                    </div>
-
-                                    <div class="text-box-none"></div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-
-                    <div class="mySlides fade">
                         <section class="stn-discord">
                             <div class="wrapper">
                                 <div class="flex-box">
@@ -61,9 +43,8 @@
                     </div>
 
                     <div class="dots">
-                        <span class="dot" onclick="currentSlide(1)"></span> 
-                        <span class="dot" onclick="currentSlide(2)"></span> 
-                        <span class="dot" onclick="currentSlide(3)"></span> 
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
                     </div>
                 </div>
             </section>
@@ -88,7 +69,7 @@
                             <div class="banner-box">
                                 <h5>FIVEM</h5>
                                 <p>Starting at <span>6,00 / Mo</span>, Explore, escape and roleplay on our premium fivem servers.</p>
-                                <a class="btn3" href="fivem.php">Coming Soon</a>
+                                <a class="btn3">Coming Soon</a>
                             </div>
                         </div>
 
@@ -97,7 +78,7 @@
                             <div class="banner-box">
                                 <h5>DISCORD</h5>
                                 <p>Starting at <span>1,50 / Mo</span>, Make your Discord cummunity better on our premium discord bot hosting.</p>
-                                <a class="btn3" href="discord.php">Coming Soon</a>
+                                <a class="btn3" href="discord.php">Get Started</a>
                             </div>
                         </div>
                     </div>

@@ -14,7 +14,6 @@
                     <div class="footer-col">
                         <h5>Server Hosting</h5>
                         <a href="<?php echo $base_url; ?>/minecraft.php">Minecraft Hosting</a>
-                        <a href="<?php echo $base_url; ?>/fivem.php">FiveM Hosting</a>
                         <a href="<?php echo $base_url; ?>/discord.php">Discord Bot Hosting</a>
                     </div>
 

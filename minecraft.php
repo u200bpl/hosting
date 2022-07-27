@@ -32,7 +32,7 @@
                             <div class="plan-banner">
                                 <img src="<?php echo $base_url; ?>/<?php echo $product['img']; ?>" alt="">
                                 <div class="plan-banner-box">
-                                    <h5><?php echo $product['name']; ?> | <span>€<?php echo $product['price']; ?></span></h5>
+                                    <h5><?php echo $product['name']; ?></h5>
                                     <?php if ($product['recommended'] == true) { ?>
                                         <p>Recomende for <span>1.16</span> and above</p>
                                     <?php } else { ?>
@@ -42,7 +42,7 @@
                                     <p><span>Players: </span><?php echo $product['players']; ?></p>
                                     <p><span>Storage: </span><?php echo $product['storage']; ?> MB</p>
                                     <p><span>MySQL: </span>Free MySQL</p>
-                                    <a href="<?php echo $product['purchare_link']; ?>" class="btn5"><?php echo $product['button_txt']; ?></a>
+                                    <a href="<?php echo $product['purchare_link']; ?>" class="btn5">€<?php echo $product['price']; ?></a>
                                 </div>
                             </div>
                         <?php } ?>

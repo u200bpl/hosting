@@ -25,18 +25,6 @@
                                             </div>
                                         </div>
                                     </a>
-
-                                    <a href="<?php echo $base_url; ?>/fivem.php">
-                                        <div class="cat-game">
-                                            <div class="cat-game-img">
-                                                <img src="<?php echo $base_url; ?>/img/fivem/snale1.png" alt="">
-                                            </div>
-                                            <div class="<?php if(isset($fivem)){echo "nav-active";} ?> cat-game-info">
-                                                <a href="<?php echo $base_url; ?>/fivem.php">Fivem</a>
-                                                <p>COMING SOON</p>
-                                            </div>
-                                        </div>
-                                    </a>
                                 </div>
                             </div>
                         </div>

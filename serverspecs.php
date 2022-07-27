@@ -50,7 +50,7 @@
                         </div>
 
                         <div class="plan-banner">
-                            <img src="<?php echo $base_url; ?>/img/serverspecs/node.png" alt="">
+                            <img src="<?php echo $base_url; ?>/img/minecraft/stone.png" alt="">
 
                             <div class="plan-banner-box">
                             <h5>MC-FRA-01</h5>
